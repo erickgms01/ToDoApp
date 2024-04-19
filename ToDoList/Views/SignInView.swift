@@ -15,29 +15,27 @@ struct SignInView: View {
         NavigationView{
             VStack {
                 //Header
-                HeaderView()
+                HeaderView(title: "Sign In",
+                           subtitle: "Get Things Done",
+                           angle: 15,
+                           backgroundColor: .red,
+                           offset: -95)
                 
                 //Form
                 Form {
                     TextField("Email Adress",text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                     SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                     
-                    Button{
-                        
-                    }label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            
-                            Text("Sign In")
-                                .foregroundColor(.white)
-                                .bold()
-                                
-                        }
+                    TlButtonView(title: "Sign In",
+                                 foregroundColor: .blue
+                    ) {
+                        //login logic
                     }
+                    .padding()
                 }
+                .offset(y: -45)
                 
                 //Create Account
                 

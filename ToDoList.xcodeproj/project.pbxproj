@@ -30,6 +30,7 @@
 		A72CCCF32BD2ADBD00F036A1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72CCCF22BD2ADBD00F036A1 /* ProfileViewModel.swift */; };
 		A72CCCF52BD2ADC600F036A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72CCCF42BD2ADC600F036A1 /* User.swift */; };
 		A72CCCF72BD2AE0700F036A1 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72CCCF62BD2AE0700F036A1 /* ToDoListItem.swift */; };
+		A75ECAFF2BD30E1B005033D7 /* TlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75ECAFE2BD30E1B005033D7 /* TlButtonView.swift */; };
 		A7E337D62BD2B25B003ABD8A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E337D52BD2B25B003ABD8A /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		A72CCCF22BD2ADBD00F036A1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		A72CCCF42BD2ADC600F036A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A72CCCF62BD2AE0700F036A1 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
+		A75ECAFE2BD30E1B005033D7 /* TlButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TlButtonView.swift; sourceTree = "<group>"; };
 		A7E337D52BD2B25B003ABD8A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				A72CCCE22BD2AD4E00F036A1 /* NewItemView.swift */,
 				A72CCCE42BD2AD5E00F036A1 /* ProfileView.swift */,
 				A7E337D52BD2B25B003ABD8A /* HeaderView.swift */,
+				A75ECAFE2BD30E1B005033D7 /* TlButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				A72CCCCF2BD2AB4E00F036A1 /* MainView.swift in Sources */,
 				A72CCCBD2BD2AB0A00F036A1 /* ToDoListApp.swift in Sources */,
 				A72CCCDF2BD2AD2E00F036A1 /* ToDoListView.swift in Sources */,
+				A75ECAFF2BD30E1B005033D7 /* TlButtonView.swift in Sources */,
 				A72CCCEB2BD2AD8800F036A1 /* SignUpViewModel.swift in Sources */,
 				A72CCCE72BD2AD6F00F036A1 /* MainViewModel.swift in Sources */,
 			);
