@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
+    
+    @StateObject var viewModel = SignUpViewModel();
     
     var body: some View {
         
@@ -25,17 +24,27 @@ struct SignUpView: View {
                 
                 //Register Forms
                 Form {
-                    TextField("Your Name",text: $name)
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
+                    TextField("Your Name",text: $viewModel.name)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    TextField("Email Adress",text: $email)
+                        .autocorrectionDisabled()
+                    
+                    TextField("Email Adress",text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("Password", text: $password)
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
+                    SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
                     TlButtonView(title: "Sign Up",
                                  foregroundColor: .green
-                    ) {
-                        //sign up logic
+                    )
+                    {
+                        viewModel.signUp()
                     }
                 }
                 .offset(y: -80)
